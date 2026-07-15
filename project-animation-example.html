@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Animation One — 3D Animation — Your Name</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Space+Mono:wght@400;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!--
+  ===========================================================
+  THIS IS AN EXAMPLE PROJECT PAGE — 3D ANIMATION
+  ===========================================================
+  To add a NEW animation:
+    1. Copy this whole file and rename it, e.g. "project-animation-2.html"
+    2. Edit the text, the main video, and the screenshot sections
+    3. Open 3d-animation.html, copy a project card, change its href to
+       your new filename, and update the title/description on the card.
+  See README.md for the full step-by-step version of this.
+  ===========================================================
+-->
+
+<nav class="site-nav">
+  <div class="container">
+    <a href="index.html" class="nav-logo">Your<span>Name</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="coding.html">Coding</a></li>
+      <li><a href="3d-modelling.html">3D Modelling</a></li>
+      <li><a href="3d-animation.html">3D Animation</a></li>
+      <li><a href="journal.html">Journal</a></li>
+    </ul>
+    <button class="nav-toggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<header class="page-header detail-header">
+  <div class="container">
+    <a href="3d-animation.html" class="back-link">&larr; Back to 3D Animation</a>
+    <span class="tag">3D Animation</span>
+    <h1>Animation One</h1>
+    <p>One or two sentences on what this animation is — a walk cycle, a short piece, a rig test — and what you were practicing or trying to achieve.</p>
+    <div class="meta-row">
+      <span class="tag-chip">Blender</span>
+      <span class="tag-chip">Rigging</span>
+      <span class="tag-chip">2026</span>
+    </div>
+  </div>
+</header>
+
+<!--
+  MAIN MEDIA — the finished animation itself.
+-->
+<figure class="media-frame">
+  <video controls poster="">
+    <source src="assets/animation-one-final.mp4" type="video/mp4">
+    Your browser doesn't support embedded video.
+  </video>
+  <figcaption>Final animation</figcaption>
+</figure>
+
+<div class="detail-overview">
+  <p>
+    General overview paragraph: what happens in the piece, what software
+    and rig you used, how long it runs, and what you were focused on
+    getting right (weight, timing, silhouette, etc).
+  </p>
+</div>
+
+<!--
+  BREAKDOWN — screenshots with explanations
+  Copy one <section class="container"><div class="step-block">...</div>
+  </section> block per screenshot/step you want to talk through:
+  rigging, blocking, key poses, polish passes, whatever the process was.
+  Add class="reverse" on alternating blocks to flip image/text sides.
+-->
+
+<section class="container">
+  <div class="step-block">
+    <div class="step-media">
+      <img src="assets/animation-one-rig.jpg" alt="Rig setup screenshot">
+    </div>
+    <div class="step-text">
+      <span class="step-tag">Step 01</span>
+      <h3>Rig setup</h3>
+      <p>
+        Explain the rig you built or used — bone structure, controls,
+        anything tricky about setting it up.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="container">
+  <div class="step-block reverse">
+    <div class="step-media">
+      <img src="assets/animation-one-blocking.jpg" alt="Blocking pass screenshot">
+    </div>
+    <div class="step-text">
+      <span class="step-tag">Step 02</span>
+      <h3>Blocking the poses</h3>
+      <p>
+        Talk through the key poses you started with and what you were
+        trying to nail down first (timing, weight, silhouette).
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="container">
+  <div class="step-block">
+    <div class="step-media">
+      <img src="assets/animation-one-polish.jpg" alt="Polish pass screenshot">
+    </div>
+    <div class="step-text">
+      <span class="step-tag">Step 03</span>
+      <h3>Polish pass</h3>
+      <p>
+        Explain what changed between blocking and the final version —
+        smoothing, secondary motion, timing tweaks, whatever it was.
+      </p>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <p class="footer-note">© 2026 Your Name. Built with plain HTML/CSS.</p>
+    <ul class="footer-links">
+      <li><a href="mailto:you@example.com">Email</a></li>
+      <li><a href="https://github.com/yourusername" target="_blank" rel="noopener">GitHub</a></li>
+      <li><a href="#" target="_blank" rel="noopener">LinkedIn</a></li>
+    </ul>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>

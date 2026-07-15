@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Project One — Coding — Your Name</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Space+Mono:wght@400;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!--
+  ===========================================================
+  THIS IS AN EXAMPLE PROJECT PAGE — CODING
+  ===========================================================
+  To add a NEW coding project:
+    1. Copy this whole file and rename it, e.g. "project-coding-2.html"
+    2. Open the copy and edit the text (title, description, code, images)
+    3. Open coding.html, copy a project card, change its href to your
+       new filename, and change the title/description on the card too.
+  See README.md for the full step-by-step version of this.
+  ===========================================================
+-->
+
+<nav class="site-nav">
+  <div class="container">
+    <a href="index.html" class="nav-logo">Your<span>Name</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="coding.html">Coding</a></li>
+      <li><a href="3d-modelling.html">3D Modelling</a></li>
+      <li><a href="3d-animation.html">3D Animation</a></li>
+      <li><a href="journal.html">Journal</a></li>
+    </ul>
+    <button class="nav-toggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<header class="page-header detail-header">
+  <div class="container">
+    <a href="coding.html" class="back-link">&larr; Back to Coding</a>
+    <span class="tag">Coding</span>
+    <h1>Project One</h1>
+    <p>One or two sentences on what this project is and why you built it — this shows up right under the title, above the video/image.</p>
+    <div class="meta-row">
+      <span class="tag-chip">Python</span>
+      <span class="tag-chip">API</span>
+      <span class="tag-chip">2026</span>
+    </div>
+  </div>
+</header>
+
+<!--
+  MAIN MEDIA — a screen recording of the code/app actually working.
+  Put your video file in the assets folder, e.g. assets/project-one-demo.mp4,
+  then update the src below. If you'd rather show a screenshot instead of
+  a video, delete the <video> block and use this instead:
+    <img src="assets/project-one-screenshot.jpg" alt="Project One screenshot">
+-->
+<figure class="media-frame">
+  <video controls poster="">
+    <source src="assets/project-one-demo.mp4" type="video/mp4">
+    Your browser doesn't support embedded video — you can also just link
+    directly to the video file.
+  </video>
+  <figcaption>Demo — project running</figcaption>
+</figure>
+
+<div class="detail-overview">
+  <p>
+    This is the general overview paragraph. Explain what the project does,
+    what problem it solves or what you were trying to learn, and which
+    tools/languages/libraries you used. Keep this part high-level — the
+    step-by-step breakdown happens below.
+  </p>
+</div>
+
+<!--
+  STEP-BY-STEP CODE BREAKDOWN
+  Each block below is one "chunk" of the project: a heading, a code
+  snippet, and a paragraph explaining what that code does and why.
+  Copy a whole <section class="container"><div class="step-block full">...
+  </div></section> block to add another step. Delete the <pre><code>...
+  </code></pre> content and paste your own code in — just keep the
+  <pre><code> tags around it so it keeps the monospace box styling.
+-->
+
+<section class="container">
+  <div class="step-block full">
+    <div class="step-text">
+      <span class="step-tag">Step 1</span>
+      <h3>Setting things up</h3>
+      <div class="code-block"><code>def load_data(path):
+    with open(path) as f:
+        return json.load(f)
+
+data = load_data("input.json")</code></div>
+      <p>
+        Explain what this piece of code does in plain terms: what it's
+        reading, what it returns, and why it's structured this way. Write
+        like you're talking a friend through it.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="container">
+  <div class="step-block full">
+    <div class="step-text">
+      <span class="step-tag">Step 2</span>
+      <h3>The main logic</h3>
+      <div class="code-block"><code>def process(data):
+    results = [transform(item) for item in data if item.valid]
+    return sorted(results, key=lambda r: r.score)</code></div>
+      <p>
+        Walk through the interesting part of the logic here — the bit
+        that took the most thought, or that you're proudest of, or that
+        was the trickiest bug to fix.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="container">
+  <div class="step-block full">
+    <div class="step-text">
+      <span class="step-tag">Step 3</span>
+      <h3>Putting it together</h3>
+      <div class="code-block"><code>if __name__ == "__main__":
+    data = load_data("input.json")
+    output = process(data)
+    print(output)</code></div>
+      <p>
+        Wrap up with how it all runs end to end, and anything you'd
+        want to improve or add next time you come back to this project.
+      </p>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <p class="footer-note">© 2026 Your Name. Built with plain HTML/CSS.</p>
+    <ul class="footer-links">
+      <li><a href="mailto:you@example.com">Email</a></li>
+      <li><a href="https://github.com/yourusername" target="_blank" rel="noopener">GitHub</a></li>
+      <li><a href="#" target="_blank" rel="noopener">LinkedIn</a></li>
+    </ul>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>

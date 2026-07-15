@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Model One — 3D Modelling — Your Name</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Space+Mono:wght@400;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!--
+  ===========================================================
+  THIS IS AN EXAMPLE PROJECT PAGE — 3D MODELLING
+  ===========================================================
+  To add a NEW model:
+    1. Copy this whole file and rename it, e.g. "project-modelling-2.html"
+    2. Edit the text, sketch images, and stage images/descriptions
+    3. Open 3d-modelling.html, copy a project card, change its href to
+       your new filename, and update the title/description on the card.
+  See README.md for the full step-by-step version of this.
+  ===========================================================
+-->
+
+<nav class="site-nav">
+  <div class="container">
+    <a href="index.html" class="nav-logo">Your<span>Name</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="coding.html">Coding</a></li>
+      <li><a href="3d-modelling.html">3D Modelling</a></li>
+      <li><a href="3d-animation.html">3D Animation</a></li>
+      <li><a href="journal.html">Journal</a></li>
+    </ul>
+    <button class="nav-toggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<header class="page-header detail-header">
+  <div class="container">
+    <a href="3d-modelling.html" class="back-link">&larr; Back to 3D Modelling</a>
+    <span class="tag">3D Modelling</span>
+    <h1>Model One</h1>
+    <p>One or two sentences on what this model is — a character, prop, or environment piece — and what you were going for with it.</p>
+    <div class="meta-row">
+      <span class="tag-chip">Blender</span>
+      <span class="tag-chip">PSX style</span>
+      <span class="tag-chip">2026</span>
+    </div>
+  </div>
+</header>
+
+<!--
+  MAIN MEDIA — your best shot of the finished model: a turntable video,
+  or a hero render image. Swap between <video> and <img> as needed
+  (see the coding example page for the swap instructions).
+-->
+<figure class="media-frame">
+  <video controls poster="">
+    <source src="assets/model-one-turntable.mp4" type="video/mp4">
+    Your browser doesn't support embedded video.
+  </video>
+  <figcaption>Final turntable render</figcaption>
+</figure>
+
+<div class="detail-overview">
+  <p>
+    General overview paragraph: what the model is, the brief or idea behind
+    it, the software and workflow you used, and roughly how long it took.
+  </p>
+</div>
+
+<!--
+  CONCEPT SKETCHES
+  Drop your early drawings/reference images in the assets folder and list
+  them here. Clicking a thumbnail opens the full-size image in a new tab.
+  Add or remove <a> blocks to match how many sketches you have.
+-->
+<section class="container">
+  <span class="step-tag">Before I started</span>
+  <h3>Concept sketches</h3>
+  <p>A quick line on what these sketches were exploring — silhouette, proportions, color, whatever you were figuring out on paper first.</p>
+  <div class="sketch-gallery">
+    <a href="assets/sketch-01.jpg" target="_blank"><img src="assets/sketch-01.jpg" alt="Concept sketch 1"></a>
+    <a href="assets/sketch-02.jpg" target="_blank"><img src="assets/sketch-02.jpg" alt="Concept sketch 2"></a>
+    <a href="assets/sketch-03.jpg" target="_blank"><img src="assets/sketch-03.jpg" alt="Concept sketch 3"></a>
+    <a href="assets/sketch-04.jpg" target="_blank"><img src="assets/sketch-04.jpg" alt="Concept sketch 4"></a>
+  </div>
+</section>
+
+<!--
+  STAGES THE MODEL WENT THROUGH
+  Copy one <section class="container"><div class="step-block">...</div>
+  </section> block per stage. Add class="reverse" on alternating blocks
+  to flip image/text sides (already done below) so the page doesn't feel
+  repetitive as you scroll.
+-->
+
+<section class="container">
+  <div class="step-block">
+    <div class="step-media">
+      <img src="assets/model-one-stage-1-blockout.jpg" alt="Blockout stage">
+    </div>
+    <div class="step-text">
+      <span class="step-tag">Stage 01</span>
+      <h3>Blockout</h3>
+      <p>
+        Explain what you were doing at this stage — rough shapes, getting
+        proportions right, low-poly base mesh, whatever it was.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="container">
+  <div class="step-block reverse">
+    <div class="step-media">
+      <img src="assets/model-one-stage-2-detail.jpg" alt="Detail pass stage">
+    </div>
+    <div class="step-text">
+      <span class="step-tag">Stage 02</span>
+      <h3>Detail pass</h3>
+      <p>
+        Talk through adding detail — hard-surface edges, sculpting,
+        whatever pushed it from blockout to something more finished.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="container">
+  <div class="step-block">
+    <div class="step-media">
+      <img src="assets/model-one-stage-3-texture.jpg" alt="Texturing stage">
+    </div>
+    <div class="step-text">
+      <span class="step-tag">Stage 03</span>
+      <h3>Texturing</h3>
+      <p>
+        Explain the texturing/shading approach — low-res PSX-style
+        textures, dithering, palette limits, hand-painted, whatever
+        you did to get the look you wanted.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="container">
+  <div class="step-block reverse">
+    <div class="step-media">
+      <img src="assets/model-one-stage-4-final.jpg" alt="Final render stage">
+    </div>
+    <div class="step-text">
+      <span class="step-tag">Stage 04</span>
+      <h3>Final render</h3>
+      <p>
+        Wrap up with what changed between this and the previous stage,
+        and anything you'd do differently next time.
+      </p>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <p class="footer-note">© 2026 Your Name. Built with plain HTML/CSS.</p>
+    <ul class="footer-links">
+      <li><a href="mailto:you@example.com">Email</a></li>
+      <li><a href="https://github.com/yourusername" target="_blank" rel="noopener">GitHub</a></li>
+      <li><a href="#" target="_blank" rel="noopener">LinkedIn</a></li>
+    </ul>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
